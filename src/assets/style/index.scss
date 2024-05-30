@@ -1,0 +1,232 @@
+
+
+//默认body
+body {
+    margin: 0 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+// 默认图片大小
+image {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+
+//正方形
+@mixin react($w) {
+    width: $w;
+    height: $w;
+}
+
+//圆形
+@mixin circle($w) {
+    @include react($w);
+    border-radius: 50%;
+}
+
+//粗体字 传字大小 字体颜色
+@mixin text-bold($size, $color) {
+    font-weight: bold;
+    font-size: $size;
+    color: $color;
+    font-family: PingFang SC-Semibold, PingFang SC;
+}
+
+//中号字体 传字大小 字体颜色
+@mixin text-middle($size, $color) {
+    font-weight: 500;
+    font-size: $size;
+    color: $color;
+    font-family: PingFang SC-Medium, PingFang SC;
+}
+
+//默认字体 传字大小 字体颜色
+@mixin text-normal($size, $color) {
+    font-weight: 400;
+    font-size: $size;
+    color: $color;
+    font-family: PingFang SC, PingFang SC;
+}
+
+@mixin text-custom ($weight, $size, $color) {
+    font-weight: $weight;
+    font-size: $size;
+    color: $color;
+    font-family: PingFang SC-Medium, PingFang SC;
+}
+
+// 超出多行显示省略号
+@mixin text-overflow-line($line: 2) {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $line;
+    word-break: break-all;
+    white-space: normal;
+}
+
+// 绝对居中
+@mixin abs-center {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+// 固定居中
+@mixin fixed-center {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+// 水平排列
+@mixin hor {
+    display: flex;
+    flex-flow: row;
+}
+
+// 水平排列居中
+@mixin hor-center {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+// hor-水平方向-垂直方向
+@mixin hor-center-center {
+    @include hor;
+    justify-content: center;
+    align-items: center;
+}
+
+//水平两边方向排列
+@mixin hor-between-center {
+    @include hor;
+    justify-content: space-between;
+    align-items: center;
+}
+
+//水平两边方向排列--两边有空挡
+@mixin hor-between-around {
+    @include hor;
+    justify-content: space-around;
+    align-items: center;
+}
+
+// 垂直排列
+@mixin ver {
+    display: flex;
+    flex-direction: column
+}
+
+// 垂直排列居中
+@mixin ver-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+// ver-水平方向-垂直方向
+@mixin ver-center-center {
+    @include ver;
+    align-items: center;
+    justify-content: center
+}
+
+@each $gap in (0, 2, 4, 6, 8, 10, 12, 14, 15, 16, 17, 18, 20, 22, 24, 28, 30) {
+    $val: #{$gap  * 2}rpx;
+
+    @if $val == rpx(0) {
+        $val: 0;
+    }
+
+    .m#{$gap} {
+        margin: $val;
+    }
+
+    .mt#{$gap} {
+        margin-top: $val;
+    }
+
+    .mr#{$gap} {
+        margin-right: $val;
+    }
+
+    .mb#{$gap} {
+        margin-bottom: $val;
+    }
+
+    .ml#{$gap} {
+        margin-left: $val;
+    }
+
+    .mx#{$gap} {
+        margin-left: $val;
+        margin-right: $val;
+    }
+
+    .my#{$gap} {
+        margin-top: $val;
+        margin-bottom: $val;
+    }
+
+    .p#{$gap} {
+        padding: $val;
+    }
+
+    .pt#{$gap} {
+        padding-top: $val;
+    }
+
+    .pr#{$gap} {
+        padding-right: $val;
+    }
+
+    .pb#{$gap} {
+        padding-bottom: $val;
+    }
+
+    .pl#{$gap} {
+        padding-left: $val;
+    }
+
+    .px#{$gap} {
+        padding-left: $val;
+        padding-right: $val;
+    }
+
+    .py#{$gap} {
+        padding-top: $val;
+        padding-bottom: $val;
+    }
+}
+
+.fixedBg {
+    @include fixed-center;
+    background: #F5F6F8;
+    z-index: -1;
+}
+
+.border-bottom{
+    border-bottom: 2rpx solid #E9EBEF;
+}
+
+.space{
+    height: 100rpx;
+}

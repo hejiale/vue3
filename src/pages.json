@@ -1,0 +1,411 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"pageOrientation": "portrait",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#996fe7"
+			}
+		},
+		{
+			"path": "pages/my/my",
+			"style": {
+				"pageOrientation": "portrait",
+				"navigationStyle": "custom"
+			}
+		}
+	],
+	"subPackages": [
+		{
+			"root": "my-package",
+			"pages": [
+				{
+					"path": "pages/myProfile",
+					"style": {
+						"pageOrientation": "portrait",
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "pages/editUserDesc",
+					"style": {
+						"pageOrientation": "portrait",
+						"navigationBarTitleText": "个人描述"
+					}
+				},
+				{
+					"path": "pages/setting",
+					"style": {
+						"pageOrientation": "portrait",
+						"navigationBarTitleText": "个人设置"
+					}
+				},
+				{
+					"path": "pages/myOrder",
+					"style": {
+						"pageOrientation": "portrait",
+						"navigationStyle": "custom"
+					}
+				}
+			]
+		},
+		{
+			"root": "rank-charts",
+			"pages": [
+				{
+					"path": "pages/index",
+					"style": {
+						"pageOrientation": "portrait",
+						"navigationStyle": "custom"
+					}
+				}
+			]
+		},
+		{
+			"root": "store-package",
+			"pages": [
+				{
+					"path": "pages/index",
+					"style": {
+						"navigationStyle": "custom",
+						"usingComponents": {}
+					}
+				},
+				{
+					"path": "pages/album",
+					"style": {
+					  "navigationStyle": "custom",
+					  "usingComponents": {}
+					}
+				},
+				{
+					"path": "pages/store-drama",
+					"style": {
+					  "navigationStyle": "custom",
+					  "usingComponents": {}
+					}
+				},
+				{
+					"path": "pages/store-dm",
+					"style": {
+					  "navigationStyle": "custom",
+					  "usingComponents": {}
+					}
+				},
+				{
+					"path": "pages/evaluate-detail",
+					"style": {
+					  "navigationStyle": "custom",
+					  "usingComponents": {}
+					}
+				},
+				{
+					"path": "pages/evaluate-report",
+					"style": {
+					  "navigationStyle": "custom",
+					  "usingComponents": {}
+					}
+				},
+				{
+					"path": "pages/evaluate-edit",
+					"style": {
+					  "navigationStyle": "custom",
+					  "usingComponents": {}
+					}
+				}
+			]
+		},
+		{
+			"root": "dynamic-package",
+			"pages": [
+				{
+					"path": "pages/index",
+					"style": {
+						"pageOrientation": "portrait",
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "pages/edit",
+					"style": {
+						"pageOrientation": "portrait",
+						"navigationStyle": "custom",
+						"usingComponents": {
+						}
+					}
+				},
+				{
+					"path": "pages/detail",
+					"style": {
+						"pageOrientation": "portrait",
+						"navigationStyle": "custom"
+					}
+				}
+			]
+		},
+		{
+			"root": "drama-package",
+			"pages": [
+				{
+					"path": "pages/index",
+					"style": {
+						"navigationStyle": "custom",
+						"usingComponents": {}
+					}
+				}
+			]
+		},
+		{
+			"root": "city-package",
+			"pages": [
+				{
+					"path": "pages/index",
+					"style": {
+						"pageOrientation": "portrait",
+						"navigationStyle": "custom"
+					}
+				}
+			]
+		},
+		{
+			"root": "city-gather",
+			"pages": [
+				{
+					"path": "pages/index",
+					"style": {
+						"pageOrientation": "portrait",
+						"navigationStyle": "custom"
+					}
+				}
+			]
+		},
+		{
+			"root": "onlineGame-package",
+			"pages": [
+				{
+					"path": "pages/index",
+					"style": {
+						"pageOrientation": "landscape",
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "pages/chooseCharacter",
+					"style": {
+						"pageOrientation": "landscape",
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "pages/combinationLock",
+					"style": {
+						"pageOrientation": "landscape",
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "pages/jigsawPuzzle",
+					"style": {
+						"pageOrientation": "landscape",
+						"navigationStyle": "custom"
+					}
+				}
+
+			]
+		},
+		{
+			"root": "onlineGame-dm-package",
+			"pages": [
+				{
+					"path": "pages/index",
+					"style": {
+						"pageOrientation": "portrait",
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "pages/gameIndex",
+					"style": {
+						"pageOrientation": "portrait",
+						"navigationStyle": "custom"
+					}
+				}
+			]
+		},
+		{
+			"root": "storeInfo",
+			"pages": [
+				{
+					"path": "pages/index",
+					"style": {
+						"pageOrientation": "portrait",
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "pages/edit",
+					"style": {
+						"pageOrientation": "portrait",
+						"navigationStyle": "custom"
+					}
+				}
+			]
+		},
+		{
+			"root": "store-saas-package",
+			"pages": [
+				{
+					"path": "pages/index",
+					"style": {
+						"pageOrientation": "portrait",
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "pages/storeCoupon",
+					"style": {
+						"navigationBarBackgroundColor": "#FFFFFF",
+						"navigationBarTitleText": "店铺优惠券",
+						"pageOrientation": "portrait"
+					}
+				},
+				{
+					"path": "pages/dramaSelect",
+					"style": {
+						"pageOrientation": "portrait",
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "pages/dramaDetail",
+					"style": {
+						"pageOrientation": "portrait",
+						"navigationStyle": "custom"
+					}
+				}
+			]
+		},
+		{
+			"root": "store-gather",
+			"pages": [
+				{
+					"path": "pages/index",
+					"style": {
+						"pageOrientation": "portrait",
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "pages/detail",
+					"style": {
+						"pageOrientation": "portrait",
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "pages/goGather",
+					"style": {
+						"pageOrientation": "portrait",
+						"navigationStyle": "custom"
+					}
+				}
+			]
+		},
+		{
+			"root": "player-gather",
+			"pages": [
+				{
+					"path": "pages/detail",
+					"style": {
+						"pageOrientation": "portrait",
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "pages/initiate",
+					"style": {
+						"pageOrientation": "portrait",
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "pages/selectDrama",
+					"style": {
+						"pageOrientation": "portrait",
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "pages/payOrder",
+					"style": {
+						"pageOrientation": "portrait",
+						"navigationStyle": "custom"
+					}
+				}
+			]
+		},
+		{
+			"root": "inComingParts",
+			"pages": [
+				{
+					"path": "pages/index",
+					"style": {
+						"pageOrientation": "portrait",
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "pages/personal-parts",
+					"style": {
+						"pageOrientation": "portrait",
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "pages/enterprise-parts",
+					"style": {
+						"pageOrientation": "portrait",
+						"navigationStyle": "custom"
+					}
+				}
+			]
+		}
+	],
+	"tabBar": {
+		"color": "#CCCCCC",
+		"selectedColor": "#14C9C9 ",
+		"borderStyle": "white",
+		"custom": true,
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/image/tab/homePage.png",
+				"selectedIconPath": "static/image/tab/sel-homePage.png"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"text": "我的",
+				"iconPath": "static/image/tab/myUser.png",
+				"selectedIconPath": "static/image/tab/sel-myUser.png"
+			}
+		],
+		"backgroundColor": ""
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"easycom": {
+		"custom": {
+			"^u--(.*)": "uview-plus/components/u-$1/u-$1.vue",
+			"^up-(.*)": "uview-plus/components/u-$1/u-$1.vue",
+			"^u-([^-].*)": "uview-plus/components/u-$1/u-$1.vue",
+			"jy-(.*)": "@/components/jy-$1/index.vue"
+		}
+	}
+}
